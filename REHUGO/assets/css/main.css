@@ -3,6 +3,10 @@ video.ted-talk {
     margin: auto;
 }
 
+p.writeup {
+    text-align: left;
+}
+
 /* Template CSS */
 html {
     color: #FFFFFF;
