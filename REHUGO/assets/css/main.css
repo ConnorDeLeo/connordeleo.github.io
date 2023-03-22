@@ -1,5 +1,7 @@
 /* Custom CSS */
 video.ted-talk {
+    width: 90%;
+    height: auto;
     margin: auto;
 }
 
