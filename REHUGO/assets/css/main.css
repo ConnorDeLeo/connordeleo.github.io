@@ -1,0 +1,194 @@
+/* Custom CSS */
+video.ted-talk {
+    margin: auto;
+}
+
+/* Template CSS */
+html {
+    color: #FFFFFF;
+    text-transform: none;
+    background-color: #3E8F92;
+    background-image: url("../images/blank_bg.gif");
+    bakground-repeat: repeat;
+    background-position: left top 4px;
+    }
+    
+body {
+    margin: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: rgba(209, 67, 158, 1);
+    border: 3px dashed;
+}
+    
+hr {
+    border: 3px dashed #FFFFFF;
+    border-bottom: none;
+}
+    
+hr.sm {
+    border: 3px dotted #FFFFFF;
+    border-bottom: none;
+    width: 50%;
+    clear: both;
+}
+    
+h1 {
+    text-transform: full-width;
+    margin-left: -6px;
+    margin-top: 15px;
+}
+    
+img {
+    width: 100%;
+    max-width: 384px;
+    min-width: 192px;
+}
+    
+img.big {
+    max-width: 772px;
+    min-width: 192px;
+}
+    
+img.gbc {
+    max-width: 160px;
+    min-width: 160px;
+}
+    
+img.gbc_wide1 {
+    max-width: 512px;
+    min-width: 160px;
+}
+    
+img.gbc_wide2 {
+    max-width: 384px;
+    min-width: 160px;
+}
+    
+img.kdc {
+    max-width: 352px;
+    min-width: 192px;
+}
+    
+img.mavica-gif {
+    max-width: 160px;
+    min-width: 160px;
+}
+    
+img.button {
+    max-width: 88px;
+    min-width: 88px;
+}
+    
+img.bigbutton {
+    max-width: 240px;
+    min-width: 240px;
+}
+    
+img.icon {
+    float: left;
+    max-width: 44px;
+    min-width: 44px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+    
+img.header {
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: -5px;
+}
+    
+img.headerlinks {
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: -5px;
+}
+    
+a img.headerlinks:hover, a img.header:hover {
+    outline: dashed 2px;
+}
+    
+div.imagecaption {
+    float: left;
+    margin-right: 4px;
+    margin-bottom: 19px;
+}
+    
+div.imagecaptiontext {
+    max-width: 384px;
+    min-width: 192px;
+}
+    
+span.blink{
+    animation:blinkingText 0.3s infinite;
+}
+    
+@keyframes blinkingText {
+    0% {color: #FFFFFF;}
+    50% {color: #530053;}
+    100% {color: #7ffe62;}
+}
+    
+video, video.wide {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 425px;
+    min-width: 192px;
+    height: 240px;
+}
+    
+video.mavica, video.standard {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 320px;
+    min-width: 192px;
+    height: 240px;
+}
+    
+a {
+    outline: none;
+    text-decoration: underline dotted;
+    color: #FFFFFF;
+}
+    
+a:focus img {
+    outline: dashed 2px;
+}
+    
+a:hover, a:focus {
+    text-decoration: underline overline dotted;
+    color: #530053;
+}
+    
+table {
+    background-color: rgba(232, 61, 141, 0.5);
+    border: 2px solid #FFFFFF;
+    border-collapse: collapse;
+    font-family: monospace;
+}
+    
+table th {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+    
+th, td {
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+}
+    
+div.chborder {
+    width: auto;
+    height: 62px;
+    background-image: url("special/cherries_sm.png");
+    background-repeat: repeat-x;
+    background-repeat: space;
+}
+    
+div.flborder {
+    width: auto;
+    height: 62px;
+    background-image: url("special/cherry_flower_sm.png");
+    background-repeat: repeat-x;
+    background-repeat: space;
+}
