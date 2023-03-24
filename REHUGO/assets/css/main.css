@@ -5,6 +5,11 @@ p.writeup {
     margin-right: 50px;
 }
 
+iframe.video {
+    width: 1124;
+    height: 630;
+}
+
 /* Template CSS */
 html {
     color: #FFFFFF;
