@@ -3,6 +3,13 @@ p.writeup {
     text-align: left;
     margin-left: 50px;
     margin-right: 50px;
+    text-indent: 36px;
+}
+
+p.spacecat {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 p.citation {
