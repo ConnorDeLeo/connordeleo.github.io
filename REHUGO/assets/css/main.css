@@ -1,4 +1,8 @@
 /* Custom CSS */
+i {
+    font-style: italic;
+}
+
 p.writeup {
     text-align: left;
     margin-left: 50px;
