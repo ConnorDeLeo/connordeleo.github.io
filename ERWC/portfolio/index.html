@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
+<head>
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+  <title>ERWC Portfolio</title>
+
+  <link rel="stylesheet" type="text/css" href="css/drifting_screen.css" media="screen, tv, projection" />
+  <link rel="stylesheet" type="text/css" href="css/drifting_print.css" media="print" />
+</head>
+
+<body>
+
+<!-- Layout container starts -->
+<div id="layoutBox">
+
+  <!-- HEADER: controls the header layout, images, title and subTitle. -->
+  <div id="headerBox">
+    <div id="headerLeftBox">
+      <span class="title">
+        erwc portfolio v0.0.1
+      </span>
+      <br/>
+      <span class="subTitle">
+        html go brrr
+      </span>
+    </div>
+    <div id="headerRightBox">
+      &nbsp;
+    </div>
+  </div>
+
+  <!-- MENU: include as many submenus as you want.  Menu groups should begin with a
+       <h1> and then all menu links need to be defined in a <div class="menuGroup">.
+       The <span class="noDisplay"> | </span> after each link only needs to be included
+       if this site will be loaded in a text only browser -->
+  <div id="menuBox">
+    <h1>
+      info
+    </h1>
+    <div class="menuGroup">
+      <a href="#background" title="background of me"><img src="images/menu_icon.gif" alt="menu item 1" /> background</a><span class="noDisplay"> | </span>
+      <a href="#me" title="photo of me"><img src="images/menu_icon.gif" alt="menu item 2" /> me</a><span class="noDisplay"> | </span>
+      <a href="writing" title="writing portfolio for erwc"><img src="images/menu_icon.gif" alt="menu item 3" /> writing portfolio</a><span class="noDisplay"> | </span>
+      <a href="docs" title="career docs for erwc"><img src="images/menu_icon.gif" alt="menu item 3" /> career docs</a><span class="noDisplay"> | </span>
+      <a href="reflection" title="the final reflection of erwc"><img src="images/menu_icon.gif" alt="menu item 3" /> final reflection</a><span class="noDisplay"> | </span>
+      <a href="#attributions" title="attributions"><img src="images/menu_icon.gif" alt="menu item 4" /> attributions</a><span class="noDisplay"> | </span>
+    </div>
+
+    <h1>
+      sources
+    </h1>
+    <div class="menuGroup">
+    </div>
+
+    <!-- NEWS: define news chunks in <p> and use <h2> for the date/title -->
+    <h1>
+      news
+    </h1>
+    <div class="newsGroup">
+      <h2>08.17.2023</h2>
+      <p>
+        launch of version 0.0.1
+      </p>
+    </div>
+
+  </div>
+
+  <!-- MAIN CONTENT : to add new headings, include a <h1> and then as many <p> blocks
+       as you'd like. <h2> will create subheadings. To finish a section, include a
+       <br/> to clearly define it. -->
+  <div id="mainContent">
+    <a name="background"></a>
+    <h1>background</h1>
+    <p>
+      I am in the class of 2024 for Sato Academy of Math and Science. Looking at majoring in mechanical engineering with either a double major in electrical and a minor in <acronym title="Computer Science">CS</acronym> or a double minor in electrical engineering and <acronym title="Computer Science">CS</acronym>. Currently working at <a href="https://www.instagram.com/baltoperformance/?hl=en">Balto Performance</a> in Signal Hill, California doing tube frame chassis design, video and photo editing, and wrenching. I am looking into getting my dream first car, a <a href="https://en.wikipedia.org/wiki/Nissan_350Z">350z</a>, and LS, technically a <a href="https://en.wikipedia.org/wiki/General_Motors_LS-based_small-block_engine#5.3_L">LM4 53</a> (a 5.3 liter aluminum block gen 3 Chevy motor), swapping it. Eventually I want to get my dream car, <a href="https://gtr-registry.com/en-r34-gtr-nur.php">Skyline R34 V-Spec II Nür</a> in Midnight Purple II.
+    </p>
+    <br/>
+
+    <a name="template"></a>
+    <h1>me</h1>
+      <img src="images/stadium.jpg">
+    <br/>
+
+    <!-- FOOTER: whatever you want in here - maybe a last updated or breadcrumb? -->
+    <div class="footer">
+      <a name="attributions"></a>
+      <font size="-1"><font size="-1" face="Arial, Helvetica, sans-serif">
+<!--This theme is free for distriubtion,  so long as  link to openwebdesing.org and florida-villa.com stay on the theme-->
+Courtesy  <a href="http://www.openwebdesign.org" target="_blank">Open Web Design</a><a href="http://www.dubaiapartments.biz" target="_blank"><img src="spacer.gif" width="5" height="5" border="0"/></a>Thanks 
+      to <a href="http://www.florida-villa.com" target="_blank">Florida Vacation Homes</a> </font></font></div>
+  </div>
+
+  <!-- BUG FIX: This corrects another IE rendering bug....  You notice it only when the menu container length is
+       greater than the main content container. Without this, when an a:hover is triggered in the main container,
+       IE reflows the page and cuts off the menu at the bottom of the main container. -->
+  <div class="spacer">
+  </div>
+
+</div>
+<!-- Layout container ends -->
+
+</body>
+</html>
