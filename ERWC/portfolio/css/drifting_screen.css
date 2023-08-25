@@ -63,6 +63,16 @@ ul {
   height: 4em;
   background: url(../images/hdr_right.jpg) no-repeat bottom right;
 }
+
+.home {
+  color:#FFFFFF;
+  text-decoration: none;
+}
+
+#headerLeftBox a:hover {
+  background: none !important;
+  text-decoration: none;
+}
  
  
 /* -- HEADER STYLES -- */
@@ -100,6 +110,13 @@ ul {
   margin-top: 30px;
 }
 
+iframe {
+  float: left;
+  width: 14.6em;
+  margin: 10px 0 0 0;
+  text-align: left;
+  border:0em;
+}
 
 /* -- CONTENT CONTAINER -- */
 
