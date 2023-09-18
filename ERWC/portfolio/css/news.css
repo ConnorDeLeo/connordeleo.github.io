@@ -1,0 +1,21 @@
+body {
+  color: black;
+  font-family: Arial;
+}
+
+.newsEmbed h2{
+  font-size: 70%;
+  font-weight: bold;
+  background-color: #EEF3FA;
+  display: block;
+  padding: 0px 0px 0px 0px;
+  margin-bottom: 0px;
+  margin-top: -5px;
+  text-align: left;
+}
+
+.newsEmbed p {
+  margin-top: 5px;  
+  font-size: 75%;
+  text-align: left;
+}
