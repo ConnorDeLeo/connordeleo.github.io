@@ -1,0 +1,22 @@
+html {
+    color: #FFFFFF;
+    text-transform: none;
+    background-color: #5398d1;
+    background-image: url("../images/blank_bg.gif");
+    bakground-repeat: repeat;
+    background-position: left top 4px;
+    }
+    
+body {
+    margin: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: rgb(255, 171, 227);
+    border: 3px dashed;
+}
+    
+h1 {
+    text-transform: full-width;
+    margin-left: -6px;
+    margin-top: 15px;
+}
