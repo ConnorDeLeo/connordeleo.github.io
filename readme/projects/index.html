@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Connor's Project Zone</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="tile-bg"></div>
+
+  <header class="site-header">
+    <img class="badge" src="assets/me.jpg" alt="me">
+    <h1>Connor's <span class="chromed">Project Zone</span></h1>
+    <marquee behavior="alternate" scrollamount="5" class="marq">
+      Welcome traveler! - Browse my projects
+    </marquee>
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#links">Links</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="projects" class="panel">
+      <h2>Projects Directory</h2>
+      <p class="blurb">Click a tile to visit the repo or demo. Right-click, view source, and bask in the <em>tacky</em> glory.</p>
+
+      <!-- Project Grid -->
+      <div class="project-grid">
+
+        <!-- THLOTS PROJECT -->
+        <article class="project" data-user="ConnorDeLeo" data-repo="thlots">
+          <div class="project-head">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2V6d2d5aGJkNTIwOHl5b281Mjc0a2x5YmJpa2pyYXZhNjVsYXo2NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oEhmNef89Yv0hhZUQ/giphy.gif" alt="Screw" />
+            <h3>Thlots</h3>
+          </div>
+          <p class="desc">Automatically create toolpaths for slot cutters and grind wheels to create exterior threads. Automatically handles feeds and speeds with multiple control variables.</p>
+          <ul class="meta">
+            <li><span class="chip">C++</span></li>
+            <li><span class="chip">CLI</span></li>
+            <li><span class="chip">CNC</span></li>
+          </ul>
+          <div class="links">
+            <a class="btn" href="https://github.com/ConnorDeLeo/thlots/tree/master/docs" target="_blank" rel="noreferrer">Docs</a>
+            <a class="btn btn-secondary" href="https://github.com/ConnorDeLeo/thlots" target="_blank" rel="noreferrer">GitHub Repo</a>
+          </div>
+          <div class="footerline">🟢 Active</div>
+        </article>
+
+        <!-- BENDTECH AUTOMATION -->
+        <article class="project" data-user="ConnorDeLeo" data-repo="bendtech-automation">
+          <div class="project-head">
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmxqcXowbGhnOHZudHdsZTdsb3JieDI3dzBrMmJnaHc2aGVrZW84ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rJjd9hVKn4Mc8/giphy.gif" alt="Welder" />
+            <h3>Bendtech Automation</h3>
+          </div>
+          <p class="desc">Automatically create toolpaths for slot cutters and grind wheels to create exterior threads. Automatically handles feeds and speeds with multiple control variables.</p>
+          <ul class="meta">
+            <li><span class="chip">python</span></li>
+            <li><span class="chip">CLI</span></li>
+            <li><span class="chip">CAD</span></li>
+          </ul>
+          <div class="links">
+            <a class="btn" href="https://www.bend-tech.com/" target="_blank" rel="noreferrer">Bend-Tech</a>
+            <a class="btn btn-secondary" href="https://github.com/ConnorDeLeo/bendtech-automation" target="_blank" rel="noreferrer">GitHub Repo</a>
+          </div>
+          <div class="footerline">🟠 Archived</div>
+        </article>
+
+      </div>
+
+      <!-- Little how-to box -->
+      <details class="howto">
+        <summary>How to add a new project</summary>
+        <pre class="code-sample">
+&lt;article class="project" data-user="username" data-repo="repo-name"&gt;
+  &lt;div class="project-head"&gt;
+    &lt;img src="IMAGE_URL.gif" alt="gif alt" /&gt;
+    &lt;h3&gt;Project Title&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;p class="desc"&gt;Short description here.&lt;/p&gt;
+  &lt;ul class="meta"&gt;
+    &lt;li&gt;&lt;span class="chip"&gt;Tag1&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span class="chip"&gt;Tag2&lt;/span&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class="links"&gt;
+    &lt;a class="btn" href="#" target="_blank"&gt;Live Demo&lt;/a&gt;
+    &lt;a class="btn btn-secondary" href="#" target="_blank"&gt;GitHub Repo&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="footerline"&gt;Status: &amp;#128679; Under Construction&lt;/div&gt;
+&lt;/article&gt;
+        </pre>
+      </details>
+    </section>
+
+    <section id="about" class="panel">
+      <h2>About</h2>
+      <p>Hi! I’m Connor. I like C++, CNCs, cars, and over-engineering everything.</p>
+    </section>
+
+    <section id="links" class="panel">
+      <h2>Links</h2>
+      <ul class="blink">
+        <li><a href="https://github.com/ConnorDeLeo">My GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="counter">You are visitor #<span id="visitor-count">...</span></div>
+    <div class="copyright">...–2025 Connor’s Site. Best viewed in Lynx 2.9.2</div>
+  </footer>
+
+  <!-- SCRIPTS -->
+   <script src="scripts/commitStatus.js"></script>
+</body>
+</html>

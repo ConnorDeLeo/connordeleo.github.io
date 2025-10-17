@@ -1,0 +1,265 @@
+/* === 90s GeoCities Energy + Catppuccin Mocha Theme === */
+/* Palette source: https://catppuccin.com/palette/mocha */
+
+:root {
+  /* Catppuccin Mocha colors */
+  --rosewater: #f5e0dc;
+  --flamingo:  #f2cdcd;
+  --pink:      #f5c2e7;
+  --mauve:     #cba6f7;
+  --red:       #f38ba8;
+  --maroon:    #eba0ac;
+  --peach:     #fab387;
+  --yellow:    #f9e2af;
+  --green:     #a6e3a1;
+  --teal:      #94e2d5;
+  --sky:       #89dceb;
+  --sapphire:  #74c7ec;
+  --blue:      #89b4fa;
+  --lavender:  #b4befe;
+
+  --text:      #cdd6f4;
+  --subtext1:  #bac2de;
+  --subtext0:  #a6adc8;
+  --overlay2:  #9399b2;
+  --overlay1:  #7f849c;
+  --overlay0:  #6c7086;
+  --surface2:  #585b70;
+  --surface1:  #45475a;
+  --surface0:  #313244;
+  --base:      #1e1e2e;
+  --mantle:    #181825;
+  --crust:     #11111b;
+
+  /* Accent recolors */
+  --bg: var(--crust);
+  --ink: var(--text);
+  --neon: var(--mauve);
+  --accent: var(--pink);
+  --panel: var(--mantle);
+  --chrome1: var(--surface1);
+  --chrome2: var(--surface2);
+  --chrome3: var(--overlay0);
+  --link: var(--blue);
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Verdana", "Trebuchet MS", "Comic Sans MS", system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+/* Soft tile pattern background */
+.tile-bg {
+  position: fixed; inset: 0; z-index: -1; opacity: 0.15;
+  background:
+    repeating-linear-gradient(45deg, var(--surface1) 0 8px, var(--surface0) 8px 16px),
+    radial-gradient(ellipse at top, var(--base) 0%, var(--crust) 80%);
+}
+
+/* Header */
+.site-header {
+  border: 3px ridge var(--chrome1);
+  background: linear-gradient(180deg, var(--surface1) 0%, var(--surface0) 100%);
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 0 0 3px var(--chrome3) inset, 0 2px 12px rgba(0,0,0,.6);
+}
+.site-header .badge {
+  float: left;
+  padding: 1px 1px;
+  background: var(--surface2);
+  color: var(--text);
+  border: 2px groove var(--chrome3);
+  margin: 2px 6px 0;
+  font-weight: 700;
+  width: 48px;
+  height: 48px;
+}
+.site-header h1 {
+  margin: 6px 0 4px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--lavender);
+  text-shadow: 0 0 6px var(--mauve), 0 0 12px var(--mauve);
+}
+.chromed {
+  background: linear-gradient(var(--mauve), var(--pink) 55%, var(--flamingo));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.marq {
+  color: var(--peach);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav {
+  margin-top: 8px;
+}
+.nav a {
+  display: inline-block;
+  margin: 0 6px;
+  padding: 6px 10px;
+  color: var(--link);
+  text-decoration: none;
+  border: 2px outset var(--chrome1);
+  background: var(--surface0);
+}
+.nav a:hover {
+  border-style: inset;
+  filter: brightness(1.2);
+}
+
+/* Layout */
+.wrap {
+  max-width: 1024px;
+  margin: 18px auto;
+  padding: 0 10px 24px;
+}
+
+.panel {
+  border: 3px ridge var(--chrome1);
+  background: linear-gradient(180deg, var(--surface0) 0%, var(--mantle) 100%);
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 0 3px var(--chrome3) inset;
+}
+
+h2 {
+  margin: 0 0 8px;
+  color: var(--mauve);
+  text-shadow: 0 0 6px var(--mauve);
+  letter-spacing: 0.5px;
+}
+.blurb { color: var(--subtext1); }
+
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.project {
+  border: 4px groove var(--chrome1);
+  background: var(--surface0);
+  padding: 10px;
+  box-shadow: 0 0 0 3px var(--surface2) inset, 0 8px 22px rgba(0,0,0,.45);
+}
+
+.project-head {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.project-head img {
+  width: 60px; height: 60px; object-fit: cover;
+  border: 3px ridge var(--chrome1);
+  background: #000;
+}
+.project h3 {
+  margin: 0;
+  color: var(--lavender);
+  text-shadow: 0 0 4px var(--mauve), 0 0 14px var(--mauve);
+}
+
+.desc {
+  margin: 8px 0;
+  color: var(--subtext1);
+}
+
+.meta {
+  list-style: none; padding: 0; margin: 0 0 10px;
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.chip {
+  display: inline-block;
+  padding: 2px 8px;
+  background: linear-gradient(180deg, var(--surface2), var(--surface1));
+  color: var(--text);
+  border: 2px outset var(--chrome1);
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.links { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn {
+  padding: 6px 10px;
+  background: linear-gradient(180deg, var(--green), var(--teal));
+  color: var(--crust);
+  text-decoration: none;
+  border: 3px outset var(--chrome1);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.btn:hover { border-style: inset; filter: brightness(1.1); }
+.btn-secondary {
+  background: linear-gradient(180deg, var(--mauve), var(--pink));
+  color: var(--crust);
+}
+
+.footerline {
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top: 2px dotted var(--overlay2);
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+/* Details “how-to” */
+.howto {
+  margin-top: 12px;
+  border: 3px ridge var(--chrome1);
+  padding: 8px;
+  background: var(--mantle);
+}
+.howto summary {
+  cursor: pointer;
+  font-weight: 800;
+  color: var(--blue);
+}
+.code-sample {
+  overflow: auto;
+  background: var(--crust);
+  color: var(--green);
+  padding: 10px;
+  border: 2px inset var(--chrome1);
+}
+
+/* Links list with fake blink */
+.blink li { margin: 6px 0; }
+.blink a {
+  color: var(--link);
+  text-decoration: underline;
+  animation: blink 1.3s steps(2, jump-none) infinite;
+}
+@keyframes blink { 50% { opacity: .35; } }
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 18px 8px 40px;
+  color: var(--subtext0);
+  border-top: 3px ridge var(--chrome1);
+  background: linear-gradient(180deg, var(--surface0) 0%, var(--mantle) 100%);
+}
+.counter {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 4px 10px;
+  background: var(--crust);
+  border: 3px inset var(--chrome1);
+  font-family: "Courier New", monospace;
+  color: var(--mauve);
+}
