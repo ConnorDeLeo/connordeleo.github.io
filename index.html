@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Portfolio / README page">
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="stylesheet" href="assets/css/crt.css"/>
+        <link rel="shortcut icon" type="icon/x-icon" href="assets/images/favicon.ico?">
+        <title>Connor De Leo</title>
+    </head>
+    <body>
+        <div class="crt-border">
+            <section class="fisheye crt">
+                <p class="crt">
+                    line 1<br>
+                    line 2<br>
+                    line 3
+                </p>
+            </section>
+        </div>
+
+        <!-- filters -->
+        <svg>
+            <defs>
+                <filter id="fisheye">
+                    <feImage href="assets/images/map.png" result="lightMap" x="0" y="0" width="600" height="600"></feImage>
+                    <feDisplacementMap in2="lightMap" in="SourceGraphic" xChannelSelector="R" yChannelSelector="G" scale="70" result="distorted"/>
+                    <feComposite operator="in" in2="lightMap"/>
+                </filter>
+            
+                <filter id="inner-glow">
+                    <feComposite in2="SourceAlpha" operator="out"/>
+                    <feGaussianBlur stdDeviation="70" result="blur"/>
+                    <feComposite operator="atop" in2="SourceGraphic"/>
+                </filter>
+
+                <filter id="bloom">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
+                    <feComposite in2="SourceGraphic" operator="arithmetic" k2="0.4" k3="1"/>
+                </filter>
+            </defs>
+        </svg>
+    </body>
+</html>
