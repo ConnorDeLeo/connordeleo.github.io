@@ -80,7 +80,7 @@ p.crt-ascii {
     color: lime;
     font-size: 6px;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
 }
 
 /* animations */
