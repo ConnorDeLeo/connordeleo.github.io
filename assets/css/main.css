@@ -1,3 +1,100 @@
+/* Palette source: https://catppuccin.com/palette/mocha */
+
+:root {
+  /* Catppuccin Mocha colors */
+  --rosewater: #f5e0dc;
+  --flamingo:  #f2cdcd;
+  --pink:      #f5c2e7;
+  --mauve:     #cba6f7;
+  --red:       #f38ba8;
+  --maroon:    #eba0ac;
+  --peach:     #fab387;
+  --yellow:    #f9e2af;
+  --green:     #a6e3a1;
+  --teal:      #94e2d5;
+  --sky:       #89dceb;
+  --sapphire:  #74c7ec;
+  --blue:      #89b4fa;
+  --lavender:  #b4befe;
+
+  --text:      #cdd6f4;
+  --subtext1:  #bac2de;
+  --subtext0:  #a6adc8;
+  --overlay2:  #9399b2;
+  --overlay1:  #7f849c;
+  --overlay0:  #6c7086;
+  --surface2:  #585b70;
+  --surface1:  #45475a;
+  --surface0:  #313244;
+  --base:      #1e1e2e;
+  --mantle:    #181825;
+  --crust:     #11111b;
+
+  /* Accent recolors */
+  --bg: var(--crust);
+  --ink: var(--text);
+  --neon: var(--mauve);
+  --accent: var(--pink);
+  --panel: var(--mantle);
+  --chrome1: var(--surface1);
+  --chrome2: var(--surface2);
+  --chrome3: var(--overlay0);
+  --link: var(--blue);
+}
+
+/* mains */
 body {
-    background-color: black;
+    background-color: var(--base);
+}
+
+header {
+    /* backing */
+    background-color: var(--surface0);
+    width: 100%;
+    height: 36px;
+
+    /* fonts */
+    color: var(--mauve);
+    font-size: 24px;
+    font-family: Courier, monospace;
+    font-weight: bold;
+    text-shadow: 0 0 8px var(--pink);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mauve);
+}
+
+/* classes */
+.headed {
+    padding-top: 4px;
+}
+
+.badge {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.badge-image {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: var(--mauve);
+    box-shadow: 0 0 16px var(--mauve);
+}
+
+.badge-text {
+    text-wrap: balance;
+    max-width: 600px;
+    
+    font-family: Courier;
+    color: var(--mauve);
+    text-shadow: 0 0 4px var(--pink);
 }
